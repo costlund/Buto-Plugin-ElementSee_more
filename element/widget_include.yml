@@ -1,0 +1,8 @@
+-
+  type: widget
+  data:
+    plugin: 'wf/embed'
+    method: embed
+    data:
+      type: script
+      file: /plugin/element/see_more/js/PluginElementSee_more.js

@@ -1,0 +1,33 @@
+readme:
+  name: Buto-Plugin-ElementSee_more
+  description: |
+    If a div elements contains much text and you do not want user to scroll down one could use this plugin to prevent that. 
+  item:
+    -
+      name: Widgets
+      item:
+        -
+          name: widget_include
+          description: |
+            Add script in document head section.
+            ````
+            type: widget
+            data:
+              plugin: 'element/see_more'
+              method: include
+            ````
+        -
+          name: widget_text
+          description: |
+            Add a widget on a page. 
+            - Creates a div element with a height of 40px.
+            - If text is hidden a button is added to show more/less text.
+
+            ````
+            type: widget
+            data:
+              plugin: element/see_more
+              method: text
+              data:
+                text: 'A lot of text. A lot of text. A lot of text. A lot of text. A lot of text. A lot of text. A lot of text.'
+            ````

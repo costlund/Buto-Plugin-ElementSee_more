@@ -1,0 +1,16 @@
+type: div
+attribute:
+  style:
+    margin-bottom: 20px
+innerHTML: 
+  -
+    type: div
+    attribute:
+      id: rs:id
+      style:
+        height: 40px
+        overflow: hidden
+    innerHTML: rs:text
+  -
+    type: script
+    innerHTML: rs:script
