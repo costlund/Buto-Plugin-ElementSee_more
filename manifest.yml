@@ -1,5 +1,9 @@
-version: 1.0.0
+version: 1.1.0
 history:
+  1.1.0:
+    date: '2024-07-16'
+    title: 'I18N'
+    description: 'Add i18n.'
   1.0.0:
     date: '2024-07-15'
     title: 'First version'

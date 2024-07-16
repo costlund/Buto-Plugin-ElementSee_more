@@ -6,3 +6,6 @@
     data:
       type: script
       file: /plugin/element/see_more/js/PluginElementSee_more.js
+-
+  type: script
+  innerHTML: rs:script

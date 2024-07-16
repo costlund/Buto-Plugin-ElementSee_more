@@ -1,9 +1,13 @@
 function PluginElementSee_more(){
+  this.i18n = {};
+  this.init = function(i18n){
+    this.i18n = i18n;
+  }
   this.text = function(id){
     var element = document.getElementById(id);
     if(element.scrollHeight != element.clientHeight){
       var btn = document.createElement('a');
-      btn.innerHTML = 'Visa mer';
+      btn.innerHTML = this.i18n.see_more;
       btn.href = '#!';
       btn.setAttribute('style', 'float:right');
       btn.setAttribute('class', 'text-secondary');
@@ -15,10 +19,10 @@ function PluginElementSee_more(){
     var element = document.getElementById(id);
     if(element.scrollHeight != element.clientHeight){
       element.style.height='';
-      btn.innerHTML = 'Visa mindre';
+      btn.innerHTML = this.i18n.see_less;
     }else{
       element.style.height='40px';
-      btn.innerHTML = 'Visa mer';
+      btn.innerHTML = this.i18n.see_more;
     }
   }
 }
